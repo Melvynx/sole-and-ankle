@@ -44,11 +44,11 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row-reverse;
   gap: 32px;
+  align-items: baseline;
 `;
 
 const LeftColumn = styled.div`
   flex: 0 2 248px;
-  padding-top: 16px;
 `;
 
 const MainColumn = styled.div`
@@ -59,6 +59,7 @@ const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-items: baseline;
 `;
 
 const Title = styled.h2`
