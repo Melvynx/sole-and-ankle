@@ -10,9 +10,7 @@ import Icon from '../Icon';
 const SuperHeader = () => {
   return (
     <Wrapper>
-      <MarketingMessage>
-        Free shipping on domestic orders over $75!
-      </MarketingMessage>
+      <MarketingMessage>Free shipping on domestic orders over $75!</MarketingMessage>
       <SearchInput />
       <HelpLink href="/help">Help</HelpLink>
       <UnstyledButton>
@@ -26,10 +24,15 @@ const Wrapper = styled.div`
   font-size: 0.875rem;
   color: ${COLORS.gray[300]};
   background-color: ${COLORS.gray[900]};
+  display: flex;
+  padding: 8px 32px;
+  gap: 16px;
+  align-items: center;
 `;
 
 const MarketingMessage = styled.span`
   color: ${COLORS.white};
+  margin-right: auto;
 `;
 
 const HelpLink = styled.a`
